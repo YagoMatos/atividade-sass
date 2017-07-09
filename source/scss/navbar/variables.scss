@@ -1,0 +1,40 @@
+//colors
+$bg-body:#191919;
+$bg-navbar:#2f2f31;
+$text-color-navbar:#000;
+
+//navbar sizes
+$navbar-width:-364.13px;
+$navbar-height:-72px;
+
+/***themes***/
+
+//*** theme 1 ***//
+//hover1
+$clr-hover-theme1:#eceeef;
+$bg-hover-theme1:$bg-body;
+$brd-hover-theme1: 2px solid $text-color-navbar;
+//navbar1
+$bg-theme1: $bg-navbar;
+$clr-theme1: $text-color-navbar;
+$brd-theme1: $brd-hover-theme1;
+
+//*** theme 2 ***//
+//hover2
+$clr-hover-theme2:#fff;
+$bg-hover-theme2:$bg-body;
+$brd-hover-theme2: 2px solid $clr-hover-theme2;
+//navbar2
+$bg-theme2: $text-color-navbar;
+$clr-theme2: #ccc;
+$brd-theme2: 2px solid $clr-hover-theme2;
+
+//*** theme 3 ***//
+//hover3
+$clr-hover-theme3:$clr-hover-theme2;
+$bg-hover-theme3:$bg-body;
+$brd-hover-theme3: $brd-hover-theme1;
+//navbar3
+$bg-theme3: $clr-hover-theme2;
+$clr-theme3: $text-color-navbar;
+$brd-theme3: $brd-hover-theme1;

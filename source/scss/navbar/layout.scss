@@ -1,0 +1,35 @@
+@import "variables.scss";
+
+%component{
+	font-family:sans-serif;
+	text-decoration: none;
+}
+
+@mixin theme ($background, $color ,$border){
+	background: $background;
+	color: $color;
+	border: $border;
+
+	.navbar-brand{
+		color: $color;
+	}
+
+	.nav-link{
+		color:$color;
+	}
+
+}
+
+.navbar{
+	@include theme ($bg-theme1 ,$clr-theme1, $brd-theme1);	
+	//@include theme ($bg-theme2 ,$clr-theme2, $brd-theme2); 
+	//@include theme ($bg-theme3 ,$clr-theme3, $brd-theme3);
+
+	.nav-link{
+		&:hover{
+			@include theme ($bg-hover-theme1,$clr-hover-theme1, $brd-hover-theme1);
+			//@include theme ($bg-hover-theme2,$clr-hover-theme2, $brd-hover-theme2);	
+			//@include theme ($bg-hover-theme3,$clr-hover-theme3, $brd-hover-theme3);	
+		}
+	}
+}
