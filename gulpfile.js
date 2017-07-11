@@ -7,9 +7,9 @@ var cleanCSS = require('gulp-clean-css');
 
 gulp.task("sass", function(){
 	return gulp.src("./source/scss/style.scss")
-		.pipe(sass())
-        .on("error", notify.onError({title:"erro ao compilar", message:"<%= error.message %>"})
-		.pipe(cleanCSS({compatibility: 'ie8'}))
+	.pipe(sass())
+        .on("error", notify.onError({title:"erro ao compilar", message:"<%= error.message %>"}))
+	.pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('./dist/css'))
 });
